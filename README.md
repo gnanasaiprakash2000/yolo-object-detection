@@ -1,46 +1,43 @@
-# 🧠 YOLO Object Detection
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green)
-![PyTorch](https://img.shields.io/badge/YOLO-Detection-orange)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# 🚀 YOLOv8 Object Detection
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Ultralytics](https://img.shields.io/badge/Ultralytics-YOLOv8-orange)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
 ![Stars](https://img.shields.io/github/stars/gnanasaiprakash2000/yolo-object-detection.svg?style=social)
 
-> Real-time object detection using **YOLO (You Only Look Once)** — built with Python and OpenCV.
+> Real-time **Object Detection and Segmentation** using **YOLOv8**, the latest version of the YOLO (You Only Look Once) family by **Ultralytics**.
 
 ---
 
-## 📖 Table of Contents
-- [Overview](#overview)
-- [Project Features](#project-features)
-- [Project Structure](#project-structure)
-- [Setup Instructions](#setup-instructions)
-- [Usage](#usage)
-- [Example Outputs](#example-outputs)
-- [How It Works](#how-it-works)
-- [Future Improvements](#future-improvements)
-- [Tech Stack](#tech-stack)
-- [License](#license)
-- [Author](#author)
+## 🧠 Overview
+
+This project demonstrates how to perform **object detection, classification, and segmentation** using the **YOLOv8 neural network**, implemented in Python with the Ultralytics library.  
+
+YOLOv8 is the successor of YOLOv5 — redesigned for higher speed, modularity, and accuracy.  
+It supports both **detection (bounding boxes)** and **segmentation (pixel masks)** with easy training and inference workflows.
 
 ---
 
-## 🚀 Overview
+## ⚡ What is YOLOv8?
 
-This project demonstrates **real-time object detection** using the **YOLO architecture**.  
-It can detect multiple classes of objects in **images**, **videos**, or **live webcam streams** with high accuracy and speed.
+**YOLOv8** is a **convolutional neural network (CNN)**–based object detection architecture built by [Ultralytics](https://github.com/ultralytics/ultralytics).  
+It improves upon earlier YOLO versions (v3–v7) with:
 
-YOLO divides an image into grids and predicts bounding boxes + class probabilities for each grid — allowing **fast, end-to-end detection** without separate region proposals.
+### 🔹 Key Features
+- **Anchor-free architecture** → faster training & inference  
+- **Decoupled head** → better objectness and classification accuracy  
+- **Mosaic & MixUp augmentation** → robust training  
+- **Batch normalization + SiLU activation** → improved convergence  
+- **ONNX / TensorRT export** for deployment on edge devices  
+- **Supports tasks:** detection, segmentation, classification, and pose estimation  
+
+### 🧩 YOLOv8 Model Variants
+| Model | Size | Speed (ms) | mAP (COCO) | Best for |
+|--------|------|------------|-------------|-----------|
+| YOLOv8n | Nano | ~2.7 | 37.3 | Edge / Mobile |
+| YOLOv8s | Small | ~6.2 | 44.9 | Real-time |
+| YOLOv8m | Medium | ~11.2 | 50.2 | Balanced |
+| YOLOv8l | Large | ~22.0 | 52.9 | High accuracy |
+| YOLOv8x | XLarge | ~34.0 | 53.9 | Research use |
 
 ---
-
-## ✨ Project Features
-- Detects **multiple objects** in real time  
-- Works on **images, videos, and webcams**  
-- Draws **bounding boxes**, **class names**, and **confidence scores**  
-- Supports **YOLOv3 / YOLOv5 / YOLOv8** (configurable)  
-- Easily extendable for **custom datasets**  
-- Lightweight and easy to run on CPU or GPU  
-
----
-
-## 📁 Project Structure
