@@ -44,3 +44,7 @@ It improves upon earlier YOLO versions (v3–v7) with:
 ### Before yolo version 
 
 ![image alt](Images/IMG_20251017_090710.jpg)
+
+### After yolo version 
+
+![image alt](Images/IMG_20251017_090807.jpg)
